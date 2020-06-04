@@ -57,7 +57,7 @@ for row_index, row in df.iterrows():
   vo2data = pd.to_numeric(row['VO₂ max'])
   json_body = [
     {
-        "measurement": "Nick Health Data",
+        "measurement": "Health Data",
         "tags": {
             "reference": tags
         },
@@ -149,7 +149,7 @@ for sleep_index, sleeprow in dfsleep.iterrows():
   wakecount = sleeprow['Wake Count']
   sleepjson_body = [
     {
-        "measurement": "Nick Sleep Data",
+        "measurement": "Sleep Data",
         "tags": {
             "reference": sleeptags
         },
